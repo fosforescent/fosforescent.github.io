@@ -1,0 +1,114 @@
+// import { useState } from 'react'
+import imageUrl from '@/assets/space-1278869_1920.jpg';
+// import Background2 from '../background2';
+
+
+export default function Register() {
+  
+
+  return (
+    <div   style={{
+      width: '100%',
+      height: "100vh",
+      boxSizing: 'border-box',
+      backgroundImage: `url('${imageUrl}')`,
+      backgroundColor: 'transparent',
+      backgroundSize: 'cover',
+      opacity: 1,
+      position: 'relative',
+    }}>
+
+    <div className="register-content" style={{
+      zIndex: 7,
+      position: 'absolute',
+      top: 0,
+      left: 0,    
+      width: '100%',
+      height: '100%',
+      flexDirection: 'column',
+      display: 'flex',
+      justifyContent: 'center',
+      textAlign: 'center',      
+      }}>
+
+        <div style={{
+
+        }} className="items-center">
+          <div style={{
+            padding: '50px',
+            backgroundColor: 'rgba(0,0,0,.5)',
+            backgroundClip: 'text',
+
+            mixBlendMode: 'screen',
+          }} className='text-white '>
+            <h1 style={{
+              fontSize: '40px',
+              // textShadow: '0 1px 1px hsl(169, 100%, 57%)',
+              fontFamily: 'sans-serif',
+            }}> Fosforescent </h1>
+            <div style={{
+
+            }}
+            className={`text-fosorange`}> 
+              Program your organization
+            </div>
+          </div>
+          </div>
+   
+    </div>
+
+
+    <div  style={{
+      width: '100%',
+      height: "100%",
+      boxSizing: 'border-box',
+      background: `radial-gradient(circle at 40% 40%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 33%, rgba(224,114,29,.05) 40%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%) `,
+      backgroundSize: 'cover',
+      zIndex: 3,
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      }}>
+
+      &nbsp;
+
+    </div>
+
+    <div  style={{
+      width: '100%',
+      height: "100%",
+      boxSizing: 'border-box',
+      backgroundImage: `radial-gradient(circle at 60% 60%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 33%, rgba(214,214,29,.05) 40%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%)`,
+      backgroundSize: 'cover',
+      zIndex: 4,
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      }}>
+
+      &nbsp;
+    </div>
+ 
+    <div  style={{
+      width: '100%',
+      height: "100%",
+      boxSizing: 'border-box',
+      backgroundImage: `radial-gradient(circle at 60% 60%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,.6) 100%)`,
+      backgroundSize: 'cover',
+      zIndex: 5,
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      }}>
+
+      &nbsp;
+    </div>
+ 
+	
+      {/* <Background2 style={{
+
+      }} /> */}
+    </div>
+  )
+}
+
