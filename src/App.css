@@ -28,6 +28,10 @@ body {
 #front-load {
   opacity: 1;
   transition: opacity 7s;
+  transition-duration: 7s;
+  -webkit-transition-duration: 7s;
+  -ms-transition-duration: 7s;
+  -moz-transition-duration: 7s;
   transition-timing-function: cubic-bezier(.0, .1, .2, .5, .5, .5, 1);
 }
 
@@ -39,7 +43,12 @@ body {
   opacity: .1;
   transform: translateY(0);
   transition: opacity .9s ease-in-out, transform 0.8s ease-in-out;
+  transition-duration: .9s;
+  -webkit-transition-duration: .9s;
+  -ms-transition-duration: .9s;
+  -moz-transition-duration: .9s;
 }
+
 .section-container.is-visible{
   opacity: 1;
 }
