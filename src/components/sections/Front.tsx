@@ -1,22 +1,27 @@
 // import { useState } from 'react'
 import imageUrl from '@/assets/space-1278869_1920.jpg';
+import { useEffect } from 'react';
 // import Background2 from '../background2';
 
 
-export default function Register() {
+export default function Front() {
   
+  useEffect(() => {
+    console.log('loaded')
+    setTimeout(() => document.getElementById("front-load")?.classList.remove("not-loaded"), 100) ;
+  }, [])
 
   return (
-    <div   style={{
+    <div id="front-load" style={{
       width: '100%',
       height: "100vh",
       boxSizing: 'border-box',
       backgroundImage: `url('${imageUrl}')`,
       backgroundColor: 'transparent',
       backgroundSize: 'cover',
-      opacity: 1,
+      // opacity: 1,
       position: 'relative',
-    }}>
+    }} className={"not-loaded"}>
 
     <div className="register-content" style={{
       zIndex: 7,
@@ -50,7 +55,7 @@ export default function Register() {
 
             }}
             className={`text-fosorange`}> 
-              Program your organization
+              Work together with less human error
             </div>
           </div>
           </div>

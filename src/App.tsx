@@ -38,13 +38,14 @@ function App( { children } : { children?: React.ReactNode }) {
 
       <div id="main" className="main" style={{
         position: 'relative',
-        width: '100%',
+        width: '100vw',
         paddingTop: '0',
         paddingBottom: '0',
         margin: '0',
         boxSizing: 'border-box',
         scrollSnapType: 'y mandatory',
         overflowY: 'scroll',
+        overflowX: 'hidden',
         height: '100vh',
         scrollBehavior: 'smooth'
   

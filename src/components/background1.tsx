@@ -18,31 +18,29 @@ const Background1 = () => {
 
 
 
-  useEffect(() => {
-    const listener = () => {
-      setIteration(0);
-    }
-    document.getElementById("main")?.addEventListener('scroll', listener)
+  // useEffect(() => {
+  //   const listener = () => {
+  //     iteration < 0 && setIteration(0);
+  //   }
+  //   document.getElementById("main")?.addEventListener('scroll', listener)
 
-    return () => {
-      document.getElementById("main")?.removeEventListener('scroll', listener)
-    }
-  }, [])
-
-
+  //   return () => {
+  //     document.getElementById("main")?.removeEventListener('scroll', listener)
+  //   }
+  // }, [iteration])
 
 
   useEffect(() => {
 
-    const numIterations = 15
-    console.log('iteration', iteration, numIterations)
+    const numIterations = 27
+    // console.log('iteration', iteration, numIterations)
 
     if (iteration < 0){
       return 
     }
 
     if (iteration > numIterations ){
-      setIteration(-1)
+      // setIteration(-1)
       return
     }
 
@@ -76,13 +74,14 @@ const Background1 = () => {
         // set the colour randomly
         const heightFrac = y / imagedata.height;
         const yScrollFraction = .7
-        if(Math.random() * iteration * 10 < 1){
+        if(Math.random() * 2  < 1.5){
+        // if(true){
           setPixel(imagedata, x, y, 
-            Math.floor((Math.random() * 55 )  + (100 * (1- yScrollFraction )) + (100 * (heightFrac))), 
-            Math.floor((Math.random() * 55)   + (100 * ( yScrollFraction )) + (100 * (1- heightFrac))  ),
-            Math.floor((Math.random() * 55)   + (100 * ( yScrollFraction )) + (100 * (1- heightFrac)) ), 
-            Math.floor((Math.random() * 15) + 200)
-          );
+              Math.floor((Math.random() * 55 )  + (100 * (1- yScrollFraction )) + (100 * (heightFrac))), 
+              Math.floor((Math.random() * 55)   + (100 * ( yScrollFraction )) + (100 * (1- heightFrac))  ),
+              Math.floor((Math.random() * 55)   + (100 * ( yScrollFraction )) + (100 * (1- heightFrac)) ), 
+              Math.floor((Math.random() * 15) + 200)
+            );
         }else{
           setPixel(imagedata, x, y, 
             Math.floor((Math.random() * 0 ) + 15), 
@@ -93,8 +92,8 @@ const Background1 = () => {
       }
     }
     context.putImageData(imagedata, 0, 0);
-    const nextInterval = 150 + (Math.tanh(iteration / numIterations) * 100 )
-    console.log('nextInterval', nextInterval)
+    const nextInterval =  (Math.tanh(iteration / numIterations) * 300 )
+    // console.log('nextInterval', nextInterval)
     setTimeout(() => setIteration(iteration + 1), nextInterval)
     return () => {  }
   }, [iteration])
@@ -102,7 +101,7 @@ const Background1 = () => {
 
   
 
-  return <canvas ref={canvasRef} id="canvas" width="7" height="1000" style={{
+  return <canvas ref={canvasRef} id="canvas" width={Math.floor(window.innerWidth / 54)} height="1000" style={{
     'position': 'absolute',
     'top': '0',
     'left': '0',

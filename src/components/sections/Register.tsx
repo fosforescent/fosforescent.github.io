@@ -72,15 +72,16 @@ export default function Register() {
       left: 0,    
       width: '100%',
       height: '100%',
-      flexDirection: 'column',
-      display: 'flex',
-      justifyContent: 'center',
-      textAlign: 'center',      
+      // flexDirection: 'column',
+      // display: 'flex',
+      // justifyContent: 'center',
+      // textAlign: 'center',      
       }}>
 
         <div style={{
           padding: '30px',
-          backgroundColor: 'rgba(0,0,0,.5)',    
+          backgroundColor: 'rgba(0,0,0,.5)',
+          marginTop: "33vh",   
         }} className="items-center">
  
         {hasSubmitted ? 
@@ -92,21 +93,31 @@ export default function Register() {
           <div style={{
             display: 'flex',
             flexDirection: 'row',
-            justifyContent: 'space-between',
-            maxWidth: "80%",
+            flexWrap: 'wrap',
+            justifyContent: 'flex-start',
+            width: "80%",
             margin: '0 auto',
 
           }}>
             <div style={{
-              paddingRight: '1rem',
+              flexGrow: 1,
+              flexBasis: '60%',
               width: '80%',
+              minWidth: "200px",
+
+              padding: '.5rem',
             }}>
             <Input placeholder="Email" className={`bg-transparent ${email ? 'border-white' : 'border-fosred'} focus-visible:border-white focus-visible:ring-transparent ring-white outline-none focus:ring-0`} value={email} onChange={(e) => setEmail(e.target.value)} /> 
             </div>
             <div style={{
-              width: '20%',
+              maxWidth: '100%',
+              flexBasis: "150px",
+              flexGrow: 1,
+              width: "20%",
+              minWidth: "150px",
+              padding: '.5rem', 
             }}>
-            <Button variant="outline" className='bg-transparent border-white' onClick={submitFields}>Get Notified</Button>
+            <Button variant="outline" className={`bg-transparent ${email ? 'border-fosorange' : 'border-white'}`} onClick={submitFields}>Get Notified</Button>
             </div>
           </div>
           <div style={{
@@ -119,28 +130,42 @@ export default function Register() {
               paddingBottom: '0',
             }}>
 
-              <div >
+              <div style={{
+                flexBasis: '100%',
+              }}>
                 <Input placeholder="Name" className="bg-transparent border-white focus-visible:ring-transparent" value={name} onChange={(e) => setName(e.target.value)} />
                 {/* <Textarea placeholder="message" className="bg-transparent border-white focus-visible:ring-none" value={message} onChange={(e) => setMessage(e.target.value)} /> */}
               <br />
               </div>
-              <div className='grid grid-cols-4'>
-                <div>
+              <div className='' style={{
+                display: 'flex',
+                maxWidth: "100%",
+                flexWrap: 'wrap',
+              }}>
+                <div style={{
+                  minWidth: '150px',
+
+                }}>
                 I want to:
                 </div>
-              <div>
-                <Checkbox checked={options.use} onClick={() => setOptions({...options, use: !options.use})} /> Use
-              </div>
-              <div>
-                <Checkbox className="square" checked={options.contribute} onClick={() => { console.log('clicked'); setOptions({...options, contribute: !options.contribute})} }  /> Contribute
-              </div>
-              {/* <div>
-                <Checkbox checked={options.invest} onChange={(e) => setOptions(e)} />
-              </div> */}
-              <div>
-                <Checkbox checked={options.info} onClick={() => setOptions({...options, info: !options.info})} /> Get Info
-              </div>
-
+                <div style={{
+                  minWidth: '150px',
+                }}>
+                  <Checkbox checked={options.use} onClick={() => setOptions({...options, use: !options.use})} /> Use
+                </div>
+                <div style={{
+                  minWidth: '150px',
+                }}>
+                  <Checkbox className="square" checked={options.contribute} onClick={() => { console.log('clicked'); setOptions({...options, contribute: !options.contribute})} }  /> Contribute
+                </div>
+                {/* <div>
+                  <Checkbox checked={options.invest} onChange={(e) => setOptions(e)} />
+                </div> */}
+                <div style={{
+                  minWidth: '150px',
+                }}>
+                  <Checkbox checked={options.info} onClick={() => setOptions({...options, info: !options.info})} /> Get Info
+                </div>
               </div>
             </div>
 
