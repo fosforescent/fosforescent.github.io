@@ -36,7 +36,7 @@ const Section = ({ position, children, current, fullWidth, noBg } : { current: s
       // transitionTimingFunction: 'ease-in-out',
     }}  className={`section-container ${fullWidth ? "col-span-2" : "col-span-1" } ${(isVisible || (position === '')) && 'is-visible'}`}>
       <div style={{
-              backgroundColor:  noBg ? 'transparent' : '#0006',
+              backgroundColor:  noBg ? 'transparent' : '#0007',
               width: '100%',
               height: '100svh',        
       }}>
