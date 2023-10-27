@@ -26,7 +26,7 @@ const Section = ({ position, children, current, fullWidth, noBg } : { current: s
   return (
     <div style={{
       margin: '0 auto',
-      backgroundColor: noBg ? 'transparent' : '#0006',
+      backgroundColor: 'transparent',
       width: '100%',
       overflow: 'hidden',
 
