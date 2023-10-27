@@ -27,7 +27,7 @@ export function SliderDemo({ className, ...props }: SliderProps) {
 }
 
 
-export default function Questions() {
+export default function UseCases() {
 
 
   return (
@@ -40,11 +40,11 @@ export default function Questions() {
       alignItems: 'stretch',
       padding: '3rem 2rem',
     }}>
-      <div style={{
+      {/* <div style={{
         fontSize: '1.2rem',
         fontWeight: 'bold',
 
-      }}>Questions & Answers</div>
+      }}>Uses</div> */}
 
     <div style={{
       display: "flex",

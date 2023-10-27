@@ -29,8 +29,8 @@ const router = createHashRouter([
         element: <Home position="contact" />,
       },
       {
-        path: "/questions",
-        element: <Home position="questions" />,
+        path: "/uses",
+        element: <Home position="uses" />,
       },
       {
         path: "/register",

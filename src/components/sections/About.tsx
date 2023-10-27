@@ -41,12 +41,12 @@ export default function Home() {
 
       {/* <div className="flex flex-col justify-center" style={{}}> */}
 
-      <div style={{
+      {/* <div style={{
         fontSize: '1.2rem',
         fontWeight: 'bold',
         paddingBottom: '1rem',
         textAlign: 'center',
-      }}>Fosforescent</div> 
+      }}>Fosforescent</div>  */}
     <div style={{
       display: "flex",
       flexDirection: "column",
@@ -101,7 +101,7 @@ export default function Home() {
         justifyContent: "center",
         overflow: 'auto',
         width: "100%",
-        height: "calc(100% - 5rem)",
+        height: "calc(100% - 3rem)",
         position: 'relative',
         
         }}  className="border-whispyblue/10 border-b border-t scrollbar">
@@ -129,7 +129,7 @@ export default function Home() {
           <p style={{
             paddingBottom: '1rem',
           }}>
-            Users will be able to collaborate with each other to build and execute the workflows.  One goal of Fosforescent is to bring tools available to software developers–-such as version control, typing, exception handling, atomicity, and methods for handling concurrency–-to these workflows.  This should allow people to create efficient and reliable routines and execute them with the peace of mind that they can go heads-down without dropping the ball on other tasks. 
+            By codifying manual process in this way, it also will allow us to bring tools available to software developers–-such as version control, typing, exception handling, atomicity, and methods for handling concurrency–-to anyone without need for coding. 
           </p>
  
 

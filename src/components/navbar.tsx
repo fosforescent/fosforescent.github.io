@@ -72,6 +72,12 @@ export default function NavBar() {
             <p>
               <Button variant="ghost" className="hover:bg-whispyblue/5" >
               {/* <a className={`text-popover-foreground inline-block drop-shadow-lg`}>Contact</a> */}
+                <NavLink to="/uses" reloadDocument className={classFunc} onClick={() => setOpen(false)}> Uses </NavLink>
+              </Button>
+            </p>
+            <p>
+              <Button variant="ghost" className="hover:bg-whispyblue/5" >
+              {/* <a className={`text-popover-foreground inline-block drop-shadow-lg`}>Contact</a> */}
                 <NavLink to="/register" reloadDocument className={classFunc} onClick={() => setOpen(false)}> Register </NavLink>
               </Button>
             </p>

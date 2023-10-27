@@ -5,8 +5,8 @@ import Section from '../section'
 // import Contact from "@/components/sections/Contact"
 import About from "@/components/sections/About"
 import Register from "@/components/sections/Register"
-import Questions from "@/components/sections/Q&A"
 import Front from "@/components/sections/Front"
+import UseCases from '@/components/sections/UseCases'
 // import Contact from "@/components/sections/Contact"
 
 export default function Home({ position }: {position: string}) {
@@ -26,8 +26,8 @@ export default function Home({ position }: {position: string}) {
       <Section position="about" current={position}>
         <About />
       </Section>
-      <Section position="questions" current={position}>
-        <Questions />
+      <Section position="uses" current={position}>
+        <UseCases />
       </Section>
       {/* <Section position="contact" current={position}>
         <Contact />
