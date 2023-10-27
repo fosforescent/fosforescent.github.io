@@ -11,7 +11,7 @@ import {
   ChevronUpIcon,
   // ChevronDownIcon
 } from "@radix-ui/react-icons"
-import { useIsScrolling } from "./components/use-scroll";
+// import { useIsScrolling } from "./components/use-scroll";
 
 
 function App( { children } : { children?: React.ReactNode }) {
