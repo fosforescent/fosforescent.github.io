@@ -32,13 +32,13 @@ export default function UseCases() {
 
   return (
     <div   style={{
-      width: '100%',
+      width: 'calc(100% - 2rem)',
       boxSizing: 'border-box',
-      height: "100%",
+      height: "calc(100% - 2rem)",
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'stretch',
-      padding: '3rem 1rem',
+      padding: '1rem',
       paddingRight: 'calc(1rem - 5px)'
     }}>
       {/* <div style={{
@@ -73,19 +73,19 @@ export default function UseCases() {
         display: 'flex',
         width: '100%',
         height: '100%',
+        padding: '1rem 0',
         flexDirection: 'column',
         alignContent: 'center',
         alignItems: 'center',
         justifyItems: 'center',
-        paddingRight: '5px',
         }}>
           <div style={{
-            width: '100%',
+            width: 'calc(100% - 1rem)',
             textAlign: 'justify',
             textJustify: 'inter-word',
             margin: 'auto',
             borderRadius: '5px',
-            padding: '1rem',
+            padding: '.5rem',
             backgroundColor: '#0007'
           }}>
       <Accordion type="single" collapsible className="w-full">

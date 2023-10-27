@@ -10,10 +10,10 @@ export default function Home() {
 
   return (
     <div   style={{
-      width: '100%',
-      height: "100%",
+      width: 'calc(100% - 2rem)',
+      height: "calc(100% - 6rem)",
       boxSizing: 'border-box',
-      padding: '3rem 1rem',
+      padding: '1rem 1rem',
     }}>
      {/* <h3 style={{
         gridColumn: "1/3",
@@ -52,8 +52,10 @@ export default function Home() {
       flexDirection: "column",
       justifyContent: "center",
       boxSizing: 'border-box',
-      paddingBottom: "0rem",
-      width: "100%",
+      padding: "0",
+      width: "calc(100% + 5px)",
+      paddingRight: '5px',
+      marginRight: '-5px',
       height: "100%",
     }}>
 {/* <div className='grid grid-cols-2'
@@ -102,7 +104,7 @@ export default function Home() {
         overflowY: 'auto',
         overflowX: 'hidden',        
         width: "100%",
-        height: "calc(100% - 5rem)",
+        height: "calc(100%s)",
         position: 'relative',
         alignContent: 'center',
         alignItems: 'center',
@@ -111,7 +113,7 @@ export default function Home() {
         
         }}  className="border-whispyblue/10 border-b border-t scrollbar">
           <div style={{
-            padding: '2rem',
+            padding: '0',
             position: 'absolute',
             top: 0,
             left: 0,
@@ -130,7 +132,7 @@ export default function Home() {
               textAlign: 'justify',
               textJustify: 'inter-word',
               margin: 'auto',
-              borderRadius: '5px',
+              borderRadius: '0px',
               padding: '1rem',
               backgroundColor: '#0007'
               }}>
