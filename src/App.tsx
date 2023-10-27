@@ -25,8 +25,7 @@ function App( { children } : { children?: React.ReactNode }) {
       width: '100%',
       padding: '0',
       margin: '0',
-      minHeight: '100vh', // '100%
-    }}>
+    }} className="app-container">
       <div style={{
         width: '100%',
         height: '50px',
@@ -36,7 +35,7 @@ function App( { children } : { children?: React.ReactNode }) {
         <NavBar />
       </div>
 
-      <div id="main" className="main" style={{
+      <div id="main" className="main content-container" style={{
         position: 'relative',
         width: '100vw',
         paddingTop: '0',
@@ -46,7 +45,6 @@ function App( { children } : { children?: React.ReactNode }) {
         scrollSnapType: 'y mandatory',
         overflowY: 'scroll',
         overflowX: 'hidden',
-        height: '100vh',
         scrollBehavior: 'smooth'
   
       }}>

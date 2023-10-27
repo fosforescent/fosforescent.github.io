@@ -14,14 +14,13 @@ export default function Front() {
   return (
     <div id="front-load" style={{
       width: '100%',
-      height: "100vh",
       boxSizing: 'border-box',
       backgroundImage: `url('${imageUrl}')`,
       backgroundColor: 'transparent',
       backgroundSize: 'cover',
       // opacity: 1,
       position: 'relative',
-    }} className={"not-loaded"}>
+    }} className={"not-loaded content-container"}>
 
     <div className="register-content" style={{
       zIndex: 7,

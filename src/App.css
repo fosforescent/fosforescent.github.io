@@ -95,3 +95,8 @@ body {
   border-radius: 5px;
   background-color: #FFFFFF33;
 }
+
+.section-container, .app-container, .content-container {
+  height: 100vh;
+  height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top));
+}

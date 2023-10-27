@@ -56,14 +56,13 @@ export default function Register() {
   return (
     <div   style={{
       width: '100%',
-      height: "100vh",
       boxSizing: 'border-box',
       backgroundImage: `url('${imageUrl}')`,
       backgroundColor: 'transparent',
       backgroundSize: 'cover',
       opacity: 1,
       position: 'relative',
-    }}>
+    }} className="content-container">
 
     <div className="register-content" style={{
       zIndex: 7,

@@ -10,3 +10,6 @@ build:
 
 install: 
 	npm install
+
+ngrok:
+	ngrok http 5173
