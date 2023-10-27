@@ -131,7 +131,7 @@ export default function Home() {
               textAlign: 'justify',
               textJustify: 'inter-word',
               margin: 'auto',
-              borderRadius: '5px',
+              borderRadius: '0px',
               padding: '1rem',
               backgroundColor: '#0007'
               }} className="border-whispyblue/10 border-b border-t">
