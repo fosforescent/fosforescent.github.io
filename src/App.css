@@ -100,15 +100,15 @@ body {
 }
 
 .section-container, .app-container, .content-container {
-  height: 100svh;
   height: 100vh;
   height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top));
-  max-height: 100svh;
+  height: 100svh;
   max-height: 100vh;
   max-height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top));
-  min-height: 100svh;
+  max-height: 100svh;
   min-height: 100vh;
   min-height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top));
+  min-height: 100svh;
   overflow: hidden;
 }
 

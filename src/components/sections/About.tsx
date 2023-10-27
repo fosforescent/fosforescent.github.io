@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div   style={{
       width: 'calc(100% - 2rem)',
-      height: "calc(100% - 6rem)",
+      height: "calc(100% - 2rem)",
       boxSizing: 'border-box',
       padding: '1rem 1rem',
     }}>
@@ -97,14 +97,13 @@ export default function Home() {
         gridColumn: "1/3",
         padding: '0',
         fontSize: '1rem',
-        minHeight: '300px',
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         overflowY: 'auto',
         overflowX: 'hidden',        
         width: "100%",
-        height: "calc(100%s)",
+        height: "calc(100% - 3rem)",
         position: 'relative',
         alignContent: 'center',
         alignItems: 'center',

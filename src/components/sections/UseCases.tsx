@@ -73,7 +73,7 @@ export default function UseCases() {
         display: 'flex',
         width: '100%',
         height: '100%',
-        padding: '1rem 0',
+        padding: '.5rem 0',
         flexDirection: 'column',
         alignContent: 'center',
         alignItems: 'center',
@@ -85,7 +85,7 @@ export default function UseCases() {
             textJustify: 'inter-word',
             margin: 'auto',
             borderRadius: '5px',
-            padding: '.5rem',
+            padding: '1rem',
             backgroundColor: '#0007'
           }}>
       <Accordion type="single" collapsible className="w-full">
