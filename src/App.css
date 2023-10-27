@@ -8,6 +8,7 @@ body {
   padding: 0;
   background-color: #333;
   z-index: -2;
+  overflow: hidden;
 }
 
 /* .main {
@@ -24,6 +25,9 @@ body {
   width: 100%;
   grid-column: 1 / -1;
 } */
+#main::-webkit-scrollbar {
+  display: none;
+}
 
 #front-load {
   opacity: 1;
@@ -73,7 +77,6 @@ body {
 }
 
 .scrollbar {
-  height: 100%;
   width: calc(100% + 3px);
   overflow: auto;
   padding: 0 10px;
@@ -108,3 +111,28 @@ body {
   min-height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top));
   overflow: hidden;
 }
+
+
+
+#scroll-up-button, #scroll-down-button {
+  opacity: 1;
+  /* transition: opacity 3s;
+  transition-duration: 3s;
+  -webkit-transition-duration: 3s;
+  -ms-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  transition-timing-function: cubic-bezier(0, 0, 1, 0); */
+
+}
+
+#scroll-down-button.hidden, #scroll-up-button.hidden {
+  opacity: 0;
+  transition: opacity 3s;
+  transition-duration: 3s;
+  -webkit-transition-duration: 3s;
+  -ms-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  /* transition-timing-function: cubic-bezier(0, 0, 1, 0); */
+
+}
+

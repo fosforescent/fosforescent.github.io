@@ -38,7 +38,8 @@ export default function UseCases() {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'stretch',
-      padding: '3rem 2rem',
+      padding: '3rem 1rem',
+      paddingRight: 'calc(1rem - 5px)'
     }}>
       {/* <div style={{
         fontSize: '1.2rem',
@@ -53,9 +54,40 @@ export default function UseCases() {
       boxSizing: 'border-box',
       paddingBottom: "0rem",
       height: "100%",
-      overflow: 'auto',
-      width: "100%"
-    }} className="scrollbar">
+      overflowY: 'auto',
+      overflowX: 'hidden',
+      width: "100%",
+      position: 'relative',
+      alignContent: 'center',
+      alignItems: 'center',
+      justifyItems: 'center',
+      paddingRight: '5px',
+      marginRight: '-5px',
+
+  }} className="scrollbar">
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        minHeight: '100%',
+        display: 'flex',
+        width: '100%',
+        height: '100%',
+        flexDirection: 'column',
+        alignContent: 'center',
+        alignItems: 'center',
+        justifyItems: 'center',
+        paddingRight: '5px',
+        }}>
+          <div style={{
+            width: '100%',
+            textAlign: 'justify',
+            textJustify: 'inter-word',
+            margin: 'auto',
+            borderRadius: '5px',
+            padding: '1rem',
+            backgroundColor: '#0007'
+          }}>
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1" className="border-whispyblue/10">
           <AccordionTrigger>Why Checklists?</AccordionTrigger>
@@ -138,12 +170,13 @@ export default function UseCases() {
             <div style={{
                 padding: '1rem 0',
               }}>
-              Orchestrating highly asynchronous tasks, you can integrate information from various API's and send it wherever it needs to go.  But you don't need a backend coder to do it, you can create a workflow from your phone.
+              Since Fosforesecnt is capable of coordinating and automating parallel tasks, it can integrate information from various API's and send it wherever it needs to go.  But you won't need a backend coder to do it, you can create a workflow from your phone.
             </div>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-
+      </div>
+      </div>
     </div>
 
     </div>

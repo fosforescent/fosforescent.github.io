@@ -8,15 +8,31 @@ import Background1 from '@/components/background1'
 import { Button } from "@/components/ui/button"
 
 import {
-  ChevronUpIcon
+  ChevronUpIcon,
+  // ChevronDownIcon
 } from "@radix-ui/react-icons"
+import { useIsScrolling } from "./components/use-scroll";
 
 
 function App( { children } : { children?: React.ReactNode }) {
 
 
   // console.log('App.tsx', document.body.clientHeight, window.innerHeight )
+  // const isScrolling = useIsScrolling()
+  // useEffect(() => {
+  //   console.log('current section', current, position)
+  //   if(current === ''){
+  //     document.getElementById("scroll-up-button")?.classList.add('hidden')
+  //   } else {
+  //     document.getElementById("scroll-up-button")?.classList.remove('hidden')
+  //   }
 
+  //   if (current === 'register'){
+  //     document.getElementById("scroll-down-button")?.classList.add('hidden')
+  //   }else {
+  //     document.getElementById("scroll-down-button")?.classList.remove('hidden')
+  //   }
+  // }, [isScrolling])
 
   return (
     <div style={{
@@ -35,6 +51,37 @@ function App( { children } : { children?: React.ReactNode }) {
         <NavBar />
       </div>
 
+      {/* <div style={{
+        width: '100%',
+        height: '50px',
+        padding: '20px',
+        position: 'fixed',
+        zIndex: 2,
+        textAlign: 'center',
+      }} className="content-center hidden" id="scroll-up-button" onClick={() => window.scrollBy(-10, 0)}>
+        <div style={{
+          margin: '0 auto',
+          textAlign: 'center',
+          width: '30px',
+          fontSize: '30px',
+        }}><ChevronUpIcon height='20px' width='20px'/></div>
+      </div>
+      <div style={{
+        width: '100%',
+        height: '50px',
+        position: 'fixed',
+        padding: '20px',
+        zIndex: 2,
+        bottom: '0',
+        textAlign: 'center',
+      }} className="content-center" id="scroll-down-button" onClick={() => window.scrollBy(10, 0)}>
+        <div style={{
+          margin: '0 auto',
+          textAlign: 'center',
+          width: '30px',
+          fontSize: '30px',
+        }}><ChevronDownIcon height='20px' width='20px'/></div>
+      </div> */}
       <div id="main" className="main content-container" style={{
         position: 'relative',
         width: '100vw',

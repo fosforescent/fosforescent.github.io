@@ -99,10 +99,15 @@ export default function Home() {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        overflow: 'auto',
+        overflowY: 'auto',
+        overflowX: 'hidden',        
         width: "100%",
-        height: "calc(100% - 3rem)",
+        height: "calc(100% - 5rem)",
         position: 'relative',
+        alignContent: 'center',
+        alignItems: 'center',
+        justifyItems: 'center',
+        // backgroundColor: '#0003'
         
         }}  className="border-whispyblue/10 border-b border-t scrollbar">
           <div style={{
@@ -110,7 +115,25 @@ export default function Home() {
             position: 'absolute',
             top: 0,
             left: 0,
+            textAlign: 'justify',
+            textJustify: 'inter-character',
+            alignSelf: 'center',
+            flexDirection: 'column',
+            alignContent: 'center',
+            alignItems: 'center',
+            justifyItems: 'center',
+            height: '100%',
+            display: 'flex',
           }}>
+            <div style={{
+              width: '100%',
+              textAlign: 'justify',
+              textJustify: 'inter-word',
+              margin: 'auto',
+              borderRadius: '5px',
+              padding: '1rem',
+              backgroundColor: '#0007'
+              }}>
           <p style={{
             paddingBottom: '1rem',
           }}>
@@ -119,19 +142,19 @@ export default function Home() {
           <p style={{
             paddingBottom: '1rem',
           }}>
-            Imagine you and some friends want to go on a RV trip.  None of you have ever done it before, so there are a lot of things that can go wrong.  With Fosforescent, you could search for checklists that other people have made, generate one with AI, or create your own and then tweak it with friends.  Then with a click of a button, you and your friends start getting prompts to add your gear inventory, vote on which campsite to stay at, or add money to a shared pool. 
+            The purposes of Fosforescent are to help people do things together, to help people do new things right the first time, and to help people manage many parallel tasks.  To this end, there will be a searchable marketplace where people can share their knowledge and be rewarded for it.  Workflows will be collaboratively editable to allow group decisionmaking, and the execution interface will provide task-related context to promote seamless context switching.
           </p>
           <p style={{
             paddingBottom: '1rem',
           }}>
-            The purposes of Fosforescent are to help people do things together, to help people do new things right the first time, and to help people manage complex parallel tasks and their dependencies.  To this end, there will be a searchable marketplace where people can share their knowledge and be rewarded for it.  Workflows will be collaboratively editable to allow group decisionmaking, and the execution interface will provide task-related context to promote seamless context switching.
+            Suppose you and some friends want to go on a RV trip.  None of you have ever done it before, so there are a lot of things that can go wrong.  With Fosforescent, you could find or generate a set of checklists and then tweak them with friends.  Then with a click of a button, you and your friends start getting prompts to add your gear inventory, vote on which campsite to stay at, or add money to a shared pool. 
           </p>
           <p style={{
             paddingBottom: '1rem',
           }}>
             By codifying manual process in this way, it also will allow us to bring tools available to software developers–-such as version control, typing, exception handling, atomicity, and methods for handling concurrency–-to anyone without need for coding. 
           </p>
-
+          </div>
           </div>
       </div>
 

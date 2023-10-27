@@ -2,7 +2,7 @@
 import imageUrl from '@/assets/space-1278869_1920.jpg';
 import { useEffect } from 'react';
 // import Background2 from '../background2';
-
+import { ChevronDownIcon } from '@radix-ui/react-icons';
 
 export default function Front() {
   
@@ -61,6 +61,22 @@ export default function Front() {
    
     </div>
 
+    <div style={{
+        width: '100%',
+        height: '50px',
+        position: 'fixed',
+        padding: '20px',
+        zIndex: 2,
+        bottom: '0',
+        textAlign: 'center',
+      }} className="content-center" id="scroll-down-button" onClick={() => window.scrollBy(10, 0)}>
+        <div style={{
+          margin: '0 auto',
+          textAlign: 'center',
+          width: '30px',
+          fontSize: '30px',
+        }}><ChevronDownIcon height='20px' width='20px'/></div>
+      </div>
 
     <div  style={{
       width: '100%',
