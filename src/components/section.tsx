@@ -25,6 +25,7 @@ const Section = ({ position, children, current, fullWidth } : { current: string,
       backgroundColor: '#000C',
       width: '100%',
       height: '100vh',
+      height: "calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top))";
       scrollSnapAlign: 'start',
       // transitionDuration: '500ms',
       // transform: 'translateX(-50%) translateY(-50%)',
@@ -33,7 +34,7 @@ const Section = ({ position, children, current, fullWidth } : { current: string,
       <div style={{
               backgroundColor: '#000C',
               width: '100%',
-              height: '100vh',        
+              height: '100svh',        
       }}>
     <div  className="section" ref={ref} style={{
       // 'backgroundImage': 'radial-gradient(circle, rgba(2,0,36,.05) 0%, rgba(71,71,147,0.1) 31%, rgba(0,212,255,0.05) 100%)',
