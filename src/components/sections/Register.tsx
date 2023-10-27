@@ -67,21 +67,22 @@ export default function Register() {
 
     <div className="register-content" style={{
       zIndex: 7,
-      position: 'absolute',
-      top: 0,
-      left: 0,    
+      // position: 'absolute',
+      // top: 0,
+      // left: 0,    
       width: '100%',
       height: '100%',
-      // flexDirection: 'column',
-      // display: 'flex',
-      // justifyContent: 'center',
-      // textAlign: 'center',      
+      flexDirection: 'column',
+      position: "relative",
+      display: 'flex',
+      justifyContent: 'center',
+      textAlign: 'center',      
       }}>
 
         <div style={{
           padding: '30px',
           backgroundColor: 'rgba(0,0,0,.5)',
-          marginTop: "33vh",   
+          // marginTop: "33vh",   
         }} className="items-center">
  
         {hasSubmitted ? 

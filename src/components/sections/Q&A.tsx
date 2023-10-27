@@ -89,7 +89,7 @@ export default function Questions() {
             </div>
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-3" className="border-whispyblue/10">
+        <AccordionItem value="item-4" className="border-whispyblue/10">
           <AccordionTrigger>Group Planning</AccordionTrigger>
           <AccordionContent>
             <div style={{
@@ -100,7 +100,7 @@ export default function Questions() {
             </div>
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-4" className="border-whispyblue/10">
+        <AccordionItem value="item-5" className="border-whispyblue/10">
           <AccordionTrigger>Analysis</AccordionTrigger>
           <AccordionContent>
             <div style={{
@@ -110,7 +110,7 @@ export default function Questions() {
             </div>
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-4" className="border-whispyblue/10">
+        <AccordionItem value="item-6" className="border-whispyblue/10">
           <AccordionTrigger>Versioned Manual Processes</AccordionTrigger>
           <AccordionContent>
             <div style={{
@@ -122,7 +122,7 @@ export default function Questions() {
             </div>
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-5" className="border-whispyblue/10">
+        <AccordionItem value="item-7" className="border-whispyblue/10">
           <AccordionTrigger>Progressively Automate your tasks</AccordionTrigger>
           <AccordionContent>
             <div style={{
@@ -132,7 +132,7 @@ export default function Questions() {
             </div>
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-5" className="border-whispyblue/10">
+        <AccordionItem value="item-8" className="border-whispyblue/10">
           <AccordionTrigger>No Code Backend</AccordionTrigger>
           <AccordionContent>
             <div style={{
