@@ -3,7 +3,7 @@ import useOnScreen from "./use-on-screen"
 import { useLocation } from 'react-router-dom'
 
 
-const Section = ({ position, children, current, fullWidth } : { current: string, position: string, children?: React.ReactNode, fullWidth?: boolean }) => {
+const Section = ({ position, children, current, fullWidth, noBg } : { current: string, position: string, children?: React.ReactNode, fullWidth?: boolean, noBg?: boolean }) => {
 
   const ref = useRef<HTMLDivElement>(null)
 
@@ -26,8 +26,9 @@ const Section = ({ position, children, current, fullWidth } : { current: string,
   return (
     <div style={{
       margin: '0 auto',
-      backgroundColor: '#000C',
+      backgroundColor: noBg ? 'transparent' : '#0006',
       width: '100%',
+      overflow: 'hidden',
 
       scrollSnapAlign: 'start',
       // transitionDuration: '500ms',
@@ -35,7 +36,7 @@ const Section = ({ position, children, current, fullWidth } : { current: string,
       // transitionTimingFunction: 'ease-in-out',
     }}  className={`section-container ${fullWidth ? "col-span-2" : "col-span-1" } ${(isVisible || (position === '')) && 'is-visible'}`}>
       <div style={{
-              backgroundColor: '#000C',
+              backgroundColor:  noBg ? 'transparent' : '#0006',
               width: '100%',
               height: '100svh',        
       }}>

@@ -15,7 +15,7 @@ export default function Home({ position }: {position: string}) {
 
   return (
     <>
-    <Section position="" current={position} fullWidth>
+    <Section position="" current={position} fullWidth noBg>
       <Front />
     </Section>
     <div  className="grid grid-cols-1 lg:grid-cols-2" style={{

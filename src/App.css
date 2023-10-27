@@ -27,12 +27,12 @@ body {
 
 #front-load {
   opacity: 1;
-  transition: opacity 7s;
-  transition-duration: 7s;
-  -webkit-transition-duration: 7s;
-  -ms-transition-duration: 7s;
-  -moz-transition-duration: 7s;
-  transition-timing-function: cubic-bezier(.0, .1, .2, .5, .5, .5, 1);
+  transition: opacity 3s;
+  transition-duration: 3s;
+  -webkit-transition-duration: 3s;
+  -ms-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  transition-timing-function: cubic-bezier(0, 0, 1, 0);
 }
 
 #front-load.not-loaded {
@@ -97,6 +97,14 @@ body {
 }
 
 .section-container, .app-container, .content-container {
+  height: 100svh;
   height: 100vh;
   height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top));
+  max-height: 100svh;
+  max-height: 100vh;
+  max-height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top));
+  min-height: 100svh;
+  min-height: 100vh;
+  min-height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top));
+  overflow: hidden;
 }

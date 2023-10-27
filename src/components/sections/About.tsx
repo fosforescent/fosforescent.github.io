@@ -131,8 +131,6 @@ export default function Home() {
           }}>
             By codifying manual process in this way, it also will allow us to bring tools available to software developers–-such as version control, typing, exception handling, atomicity, and methods for handling concurrency–-to anyone without need for coding. 
           </p>
- 
-
 
           </div>
       </div>
