@@ -110,7 +110,7 @@ export default function Home() {
         justifyItems: 'center',
         // backgroundColor: '#0003'
         
-        }}  className="scrollbar">
+        }}  className="scrollbar border-whispyblue/10 border-b border-t">
           <div style={{
             padding: '0',
             position: 'absolute',
@@ -131,7 +131,7 @@ export default function Home() {
               textAlign: 'justify',
               textJustify: 'inter-word',
               margin: 'auto',
-              borderRadius: '0px',
+              borderRadius: '5px',
               padding: '1rem',
               backgroundColor: '#0007'
               }} className="border-whispyblue/10 border-b border-t">
