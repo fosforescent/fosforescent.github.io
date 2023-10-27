@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react"
 import useOnScreen from "./use-on-screen"
+import { useLocation } from 'react-router-dom'
+
 
 const Section = ({ position, children, current, fullWidth } : { current: string, position: string, children?: React.ReactNode, fullWidth?: boolean }) => {
 
@@ -7,17 +9,19 @@ const Section = ({ position, children, current, fullWidth } : { current: string,
 
   const [isVisible] = useOnScreen(ref)
 
+  const location = useLocation()
+
 
   useEffect(() => {
-    if(current === position){
+    if(current === position && !isVisible){
       ref.current?.scrollIntoView({ behavior: 'smooth' })
     }
-  }, [])
+  }, [location.pathname])
 
   // const scrollRef = useRef(null);
   // useScrollSnap({ ref: scrollRef, duration: 50 });
 
-  // console.log('Section', fullWidth, position, isVisible, entryDetail)
+  console.log('Section', position, current)
   
   return (
     <div style={{

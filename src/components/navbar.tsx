@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import {
   Sheet,
@@ -33,13 +34,14 @@ export default function NavBar() {
       ? "pending"
       : ""
 
+    const [open, setOpen] = useState(false);
   return (
     <div style={{
       padding: '5px 6vw',
       position: 'relative',
       zIndex: 7,
     }}>
-      <Sheet >
+      <Sheet  open={open} onOpenChange={setOpen}  >
         <SheetTrigger asChild>
           <Button variant="ghost" className="hover:bg-whispyblue/5" style={{
             zIndex: 9,
@@ -59,23 +61,23 @@ export default function NavBar() {
           }}>
             <p>
               <Button variant="ghost" className="hover:bg-whispyblue/5" >
-                <NavLink to="/" reloadDocument className={classFunc} > Home <HomeIcon className="inline text-fosorange" /></NavLink>
+                <NavLink to="/" reloadDocument className={classFunc} onClick={() => setOpen(false)}> Home <HomeIcon className="inline text-fosorange" /></NavLink>
               </Button>
             </p>
             <p>
               <Button variant="ghost" className="hover:bg-whispyblue/5" >
-              <NavLink to="/about" reloadDocument className={classFunc} > About </NavLink>
+              <NavLink to="/about" reloadDocument className={classFunc} onClick={() => setOpen(false)}> About </NavLink>
               </Button>
             </p>
             <p>
               <Button variant="ghost" className="hover:bg-whispyblue/5" >
               {/* <a className={`text-popover-foreground inline-block drop-shadow-lg`}>Contact</a> */}
-                <NavLink to="/register" reloadDocument className={classFunc} > Register </NavLink>
+                <NavLink to="/register" reloadDocument className={classFunc} onClick={() => setOpen(false)}> Register </NavLink>
               </Button>
             </p>
             <p>
               <Button variant="ghost" className="hover:bg-whispyblue/5" >
-                <a className={`text-popover-foreground inline-block drop-shadow-lg`}> Github <GitHubLogoIcon className="inline text-fosorange" /></a>
+                <a className={`text-popover-foreground inline-block drop-shadow-lg`} onClick={() => setOpen(false)} target="_blank" href="https://github.com/fosforescent/fosforescent-js"> Github <GitHubLogoIcon className="inline text-fosorange" /></a>
               </Button>
             </p>
             {/* <p>
