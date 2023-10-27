@@ -110,7 +110,7 @@ export default function Home() {
         justifyItems: 'center',
         // backgroundColor: '#0003'
         
-        }}  className="border-whispyblue/10 border-b border-t scrollbar">
+        }}  className="scrollbar">
           <div style={{
             padding: '0',
             position: 'absolute',
@@ -134,7 +134,7 @@ export default function Home() {
               borderRadius: '0px',
               padding: '1rem',
               backgroundColor: '#0007'
-              }}>
+              }} className="border-whispyblue/10 border-b border-t">
           <p style={{
             paddingBottom: '1rem',
           }}>
