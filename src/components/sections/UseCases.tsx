@@ -127,7 +127,7 @@ export default function UseCases() {
             <div style={{
               padding: '1rem 0',
             }}>
-              Make sure everyone is on the same page by communicating with precision.  
+              Make sure everyone is on the same page by communicating with precision, and easily integrate group feedback into your plan with votes or approvals.
 
             </div>
           </AccordionContent>
@@ -149,7 +149,7 @@ export default function UseCases() {
               padding: '1rem 0',
             }}>
     
-            By putting them down into systematic checklists, manual processes can be tested and refactored just like software.  This can allow for continuous improvement and cutting out unnecessary red tape while still minimizing negative tradeoffs.
+            By putting manual processes into systematic checklists, they can be tested and refactored just like software.  This can allow for continuous improvement and cutting out unnecessary red tape while still minimizing negative tradeoffs.
 
             </div>
           </AccordionContent>

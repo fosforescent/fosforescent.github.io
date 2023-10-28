@@ -138,22 +138,22 @@ export default function Home() {
           <p style={{
             paddingBottom: '1rem',
           }}>
-            Fosforescent is a platform and marketplace for checklist-based workflows.  It is currently in development.
+            Fosforescent is a platform and marketplace for collaborative checklists.  Use AI to generate a plan, or choose an existing one that's been rated highly by other users, then work together with your group to tweak and execute the plan.
           </p>
           <p style={{
             paddingBottom: '1rem',
           }}>
-            The purposes of Fosforescent are to help people do things together, to help people do new things right the first time, and to help people manage many parallel tasks.  To this end, there will be a searchable marketplace where people can share their knowledge and be rewarded for it.  Workflows will be collaboratively editable to allow group decisionmaking, and the execution interface will provide task-related context to promote seamless context switching.
+            The purposes of Fosforescent are to help people do things together, to help people do new things right the first time, and to help people manage many parallel tasks.  To this end, there will be a searchable marketplace where people can share their knowledge and be rewarded for it.  Workflows will be collaboratively editable, and will have mechanisms for group decision-making such as voting by any method, and the execution interface will provide task-related context to promote seamless context switching.
           </p>
           <p style={{
             paddingBottom: '1rem',
           }}>
-            Suppose you and some friends want to go on a RV trip.  None of you have ever done it before, so there are a lot of things that can go wrong.  With Fosforescent, you could find or generate a set of checklists and then tweak them with friends.  Then with a click of a button, you and your friends start getting prompts to add your gear inventory, vote on which campsite to stay at, or add money to a shared pool. 
+            These checklists can be useful for individuals, businesses, groups of freelancers, households, or any group that needs to plan collaboratively.  Suppose you and some friends want to go on a RV trip.  None of you have ever done it before, so there are a lot of things that can go wrong.  With Fosforescent, you could find or generate a set of checklists and then tweak them with friends.  Then with a click of a button, you and your friends start getting prompts to add your gear inventory, vote on campsites, or add money to a shared pool. 
           </p>
           <p style={{
             paddingBottom: '1rem',
           }}>
-            By codifying manual process in this way, it also will allow us to bring tools available to software developers–-such as version control, typing, exception handling, atomicity, and methods for handling concurrency–-to anyone without need for coding. 
+            By codifying manual process, it also will allow us to bring tools available to software developers–-such as version control, typing, exception handling, atomicity, and methods for handling concurrency–-to anyone without need for coding. 
           </p>
           </div>
           </div>
