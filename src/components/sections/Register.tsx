@@ -14,6 +14,8 @@ export default function Register() {
   const { toast } = useToast()
   const [hasSubmitted, setHasSubmitted] = useState(false)
   const [email, setEmail] = useState('')
+  const [invalidEmail, setInvalidEmail] = useState(false)
+  const [validEmail, setValidEmail] = useState(false)
   const [name, setName] = useState('')
   const [options, setOptions] = useState({
     use: false,
@@ -26,6 +28,11 @@ export default function Register() {
 
   const submitFields = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
+
+    if (!validEmail) {
+      setInvalidEmail(true)
+      return
+    }
 
     const formData = new FormData()
     formData.append('EMAIL', email)
@@ -51,7 +58,17 @@ export default function Register() {
   }
 
 
-
+  const emailChangeHandle = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const match = e.target.value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)
+    if (match) {
+      setValidEmail(true)
+    } else {
+      setValidEmail(false)
+    }
+    setEmail(e.target.value)
+    invalidEmail && setInvalidEmail(false)
+    
+  }
 
   return (
     <div   style={{
@@ -107,7 +124,8 @@ export default function Register() {
 
               padding: '.5rem',
             }}>
-            <Input placeholder="Email" className={`bg-transparent ${email ? 'border-white' : 'border-fosred'} focus-visible:border-white focus-visible:ring-transparent ring-white outline-none focus:ring-0`} value={email} onChange={(e) => setEmail(e.target.value)} /> 
+            <Input placeholder="Email" className={`bg-transparent ${email ? 'border-white' : 'border-fosred'} ${!validEmail ? 'focus-visible:border-fosorange' : 'focus-visible:border-foswhite'} focus-visible:ring-transparent ring-white outline-none focus:ring-0`} value={email} onChange={emailChangeHandle} /> 
+            {invalidEmail && <div className="text-fosred text-left">Invalid Email</div>}
             </div>
             <div style={{
               maxWidth: '100%',
@@ -117,7 +135,7 @@ export default function Register() {
               minWidth: "150px",
               padding: '.5rem', 
             }}>
-            <Button variant="outline" className={`bg-transparent ${email ? 'border-fosorange' : 'border-white'}`} onClick={submitFields}>Get Notified</Button>
+            <Button variant="outline" className={`bg-transparent ${validEmail ? 'border-fosgreen' : 'border-white'}`} onClick={submitFields}>Get Notified</Button>
             </div>
           </div>
           <div style={{

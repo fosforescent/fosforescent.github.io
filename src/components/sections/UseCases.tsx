@@ -127,7 +127,7 @@ export default function UseCases() {
             <div style={{
               padding: '1rem 0',
             }}>
-              Make sure everyone is on the same page by communicating with precision, and easily integrate group feedback into your plan with votes or approvals.
+              Easily integrate group feedback into your plan with votes or approvals and make sure the plan is clear by communicating in terms of concrete steps.
 
             </div>
           </AccordionContent>
