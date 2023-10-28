@@ -170,7 +170,7 @@ export default function UseCases() {
             <div style={{
                 padding: '1rem 0',
               }}>
-              Since Fosforesecnt is capable of coordinating and automating parallel tasks, it can integrate information from various API's and send it wherever it needs to go.  But you won't need a backend coder to do it, you can create a workflow from your phone.
+              Since Fosforescent is capable of coordinating and automating parallel tasks, it can integrate information from various API's and send it wherever it needs to go.  But you won't need a backend coder to do it, you can create a workflow from your phone.
             </div>
           </AccordionContent>
         </AccordionItem>
